@@ -1,0 +1,15 @@
+
+/* CORM standalone hosting overrides. Original Base44-exported design is preserved. */
+.corm-mobile-nav{display:none}
+@media (max-width: 980px){
+  .site-header .desktop-nav{display:none!important}
+  .site-header .header-cta{margin-left:auto;margin-right:.5rem}
+  .site-header .corm-mobile-trigger{display:flex!important;align-items:center;justify-content:center;background:transparent;border:0;cursor:pointer;padding:.65rem;color:inherit}
+  .corm-mobile-nav{position:absolute;left:0;right:0;top:100%;display:none!important;flex-direction:column;padding:1rem 1.25rem;background:rgba(255,255,255,.98);border-top:1px solid rgba(0,0,0,.08);box-shadow:0 16px 35px rgba(0,0,0,.08);z-index:1000}
+  .site-header.mobile-open .corm-mobile-nav{display:flex!important}
+  .corm-mobile-nav a{padding:.75rem 0}
+}
+@media (min-width:981px){.site-header .corm-mobile-trigger{display:none!important}}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid rgba(180,35,35,.28);outline-offset:3px}
+html{scroll-behavior:smooth}
+.form-success{margin-top:1rem;padding:1rem;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.7)}
